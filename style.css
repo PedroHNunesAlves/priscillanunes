@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Rubik&display=swap');
+
+:root {
+    --primary-color: #3B576F;
+    --secundary-color: #cccccc;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --smooth-gray: #4e4e4e96;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+/* End of general configurations */
+
+header {
+    background-color: var(--secundary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+#logo img {
+    border-radius: 50%;
+    box-shadow: 5px 3px gray;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+#nav ul {
+    display: flex;
+    list-style: none;
+}
+
+#nav ul li {
+    margin: 0 1rem;
+}
+
+#nav ul:hover a {
+    color: var(--smooth-gray);
+}
+
+#nav ul li a {
+    color: var(--primary-color);
+    font-weight: 800;
+    transition: .2s ease-in-out;
+}
+
+#nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+#social-medias {
+    display: flex;
+    margin-left: 15px;
+}
+
+
+#social-medias i {
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 30px;
+    transition: .2s ease-in-out;
+    padding: 3px;
+}
+
+#social-medias a:hover i {
+    transform: translateY(-4px);
+}
+
+#icons {
+    display: none;
+    justify-content: center;
+
+}
+
+#i {
+    display: flex;
+    place-self: center;
+    font-size: 40px;
+    cursor: pointer;
+
+}
+
+#ii {
+    display: none;
+    place-self: center;
+    font-size: 40px;
+}
+
+/* End of the header's infraestructure */
+
+/* 'AboutMe' in english  */
+
+#aboutMe {
+    display: flex;
+    width: 100%;
+    padding: 130px 0 20px 0;
+
+}
+
+#aboutMe aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 450px;
+    background-color: var(--primary-color);
+}
+
+#aboutMe aside img {
+    width: 320px;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+    border: 5px solid var(--white-color);
+}
+
+#aboutMe aside img:hover {
+    transform: scale(0.8);
+}
+
+#aboutMe article h1,
+p,
+span {
+    font-family: 'Poppins';
+    text-align: justify;
+}
+
+#aboutMe article {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 10px;
+    justify-content: center;
+}
+
+#aboutMe article~h1 {
+    align-items: center;
+
+}
+
+
+#aboutMe h1 {
+    font-size: 50px;
+}
+
+#aboutMe span {
+    font-size: 30px;
+    color: var(--smooth-gray);
+}
+
+
+/* 'AboutMe' in portuguese  */
+
+#aboutPT {
+    display: flex;
+    width: 100%;
+
+}
+
+#aboutPT aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 450px;
+    background-color: var(--smooth-gray);
+}
+
+#aboutPT aside img {
+    width: 320px;
+    border-radius: 50%;
+    border: 5px solid var(--white-color);
+    transition: .4s ease-in-out;
+}
+
+#aboutPT aside img:hover {
+    transform: scale(0.8);
+}
+
+#aboutPT article h1,
+p,
+span {
+    font-family: 'Poppins';
+    text-align: justify;
+}
+
+#aboutPT article {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 10px;
+    justify-content: center;
+}
+
+#aboutPT article~h1 {
+    align-items: center;
+
+}
+
+
+#aboutPT h1 {
+    font-size: 50px;
+}
+
+#aboutPT span {
+    font-size: 30px;
+    color: var(--smooth-gray);
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+    background-color: var(--secundary-color);
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--black-color);
+}
+
+::selection {
+    background-color: var(--secundary-color);
+}
+
+
+
+@media (max-width: 1000px) {
+    header {
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width: 920px) {
+
+    header {
+        padding: 10px 30px;
+    }
+
+    #icons {
+        display: flex;
+    }
+
+    #social-medias {
+        display: none;
+    }
+
+    #nav.active {
+        opacity: 1;
+        background-color: var(--secundary-color);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #nav.active ul {
+        display: flex;
+    }
+
+    #nav.active #social-medias {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        place-self: center;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        margin: 0;
+        margin-bottom: 200px;
+
+    }
+
+    #nav.active #social-medias i {
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        margin: 0;
+        padding: 0 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #nav {
+        position: absolute;
+        top: 130px;
+        left: 0;
+        right: 0;
+        height: 100%;
+        z-index: -1;
+        width: 100%;
+        background-color: var(--secundary-color);
+        transition: .2s ease-in;
+        margin: 2px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        opacity: 0;
+
+    }
+
+    #nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    #nav ul li {
+        margin-top: 2rem;
+    }
+
+    #nav ul li a {
+        font-size: 30px;
+    }
+
+    #aboutMe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #aboutMe h1 {
+        font-size: 40px;
+    }
+
+    #aboutMe aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    #aboutMe article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    #aboutMe article p {
+        margin: 0 8px;
+    }
+
+    /*  */
+    #aboutPT {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #aboutPT aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    #aboutPT article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    #aboutPT h1 {
+        font-size: 40px;
+    }
+
+    #aboutPT article p {
+        margin: 0 8px;
+    }
+
+}

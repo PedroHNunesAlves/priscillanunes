@@ -235,7 +235,9 @@ span {
 
 
 
-
+#mobile-image {
+    display: none;
+}
 
 #contact {
     background-color: var(--main-gray-color);
@@ -563,27 +565,37 @@ footer {
         margin: 0 8px;
     }
 
+    #mobile-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        place-self: center;
+        width: 100%;
+    }
+
     #contact {
         padding-top: 50px;
     }
 
     #title h1 {
-        font-size: 45px;
+        font-size: 60px;
         font-weight: 800;
     }
 
     #title h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .texts h1 {
         text-align: center;
         font-size: 25px;
+        font-family: 'Rubik';
     }
 
     .texts h2 {
         text-align: center;
         font-size: 18px;
+        font-family: 'Rubik';
     }
 
     #social-medias-contact {

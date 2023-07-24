@@ -156,7 +156,7 @@ header {
 #aboutMe {
     display: flex;
     width: 100%;
-    padding: 130px 0 20px 0;
+    padding: 130px 0 0 0;
 
 }
 
@@ -230,6 +230,102 @@ span {
 
 
 
+
+
+#contact {
+    background-color: var(--secundary-color);
+    padding: 30px 20px;
+    width: 100%;
+
+}
+
+
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+#title h1 {
+    font-size: 4rem;
+}
+
+#title h2 {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.contactBlock {
+    display: flex;
+    width: 100%;
+}
+
+.texts {
+    color: var(--primary-color);
+}
+
+.texts h1 {
+    font-size: 2.5rem;
+}
+
+.texts h2 {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts {
+    padding-bottom: 20px;
+}
+
+.allSocials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#social-medias-contact {
+    font-size: 40px;
+}
+
+
+
+#social-medias-contact a {
+    margin: 0 10px;
+}
+
+.contactImg {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailContact {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    align-items: center;
+    gap: 10px;
+}
+
+.emailContact p {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
 #wave-footer {
     overflow: hidden;
     width: 100%;
@@ -269,7 +365,9 @@ footer {
     background-color: var(--smooth-gray);
 }
 
-
+#social-medias-footer {
+    padding-right: 30px;
+}
 
 #social-medias-footer i {
     color: var(--white-color);
@@ -294,9 +392,9 @@ footer {
     background-color: var(--black-color);
 }
 
-::selection {
+/* ::selection {
     background-color: var(--secundary-color);
-}
+} */
 
 @media (max-width: 1466px) {
     #aboutMe aside {
@@ -311,6 +409,10 @@ footer {
 
     #aboutMe article {
         margin: 0 5px;
+    }
+
+    #contact {
+        padding: 30px 20px;
     }
 }
 
@@ -327,6 +429,17 @@ footer {
     #aboutMe article {
         margin: 0 5px;
     }
+
+    .contactContent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contactImg {
+        display: none;
+    }
+
 }
 
 @media (max-width: 985px) {
@@ -445,6 +558,47 @@ footer {
         margin: 0 8px;
     }
 
+    #contact {
+        padding-top: 50px;
+    }
+
+    #title h1 {
+        font-size: 45px;
+        font-weight: 800;
+    }
+
+    #title h2 {
+        font-size: 30px;
+    }
+
+    .texts h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .texts h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #social-medias-contact {
+        font-size: 35px;
+        padding: 20px 0;
+    }
+
+    #social-medias-contact a {
+        margin: 0 8px;
+    }
+
+    .emailContact {
+        padding: 0;
+        gap: 5px;
+    }
+
+    .emailContact p {
+        font-size: 16px;
+    }
+
     footer {
         display: flex;
         flex-direction: column;
@@ -466,5 +620,8 @@ footer {
         display: none;
     }
 
+    #social-medias-footer {
+        padding-right: 0;
+    }
 
 }

@@ -1,7 +1,7 @@
 const menuIcon = document.getElementById("i");
 const closeMenu = document.getElementById("ii");
 const navMobile = document.getElementById("nav");
-const navButtons = document.getElementById("navButtons");
+const navButtonsList = document.querySelectorAll("#navButtons");
 const logoUp = document.getElementById("upwork");
 const LogoMob = document.getElementById("workup");
 
@@ -30,10 +30,12 @@ window.addEventListener("scroll", function () {
   }
 });
 
-navButtons.addEventListener("click", function () {
-  navMobile.classList.remove("active");
-  closeMenu.style.display = "none";
-  menuIcon.style.display = "flex";
+navButtonsList.forEach((navButton) => {
+  navButton.addEventListener("click", function () {
+    navMobile.classList.remove("active");
+    closeMenu.style.display = "none";
+    menuIcon.style.display = "flex";
+  });
 });
 
 menuIcon.addEventListener("click", function () {

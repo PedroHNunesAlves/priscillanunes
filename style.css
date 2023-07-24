@@ -221,6 +221,10 @@ span {
     color: var(--primary-color);
 }
 
+#PTtext {
+    font-size: 14px;
+    font-weight: 800;
+}
 
 
 

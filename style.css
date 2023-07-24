@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #3B576F;
+    --main-gray-color: #d9dada;
     --secundary-color: #cccccc;
     --black-color: #000000;
     --white-color: #FFFFFF;
@@ -31,7 +32,7 @@ a {
 /* End of general configurations */
 
 header {
-    background-color: var(--secundary-color);
+    background-color: var(--main-gray-color);
     display: flex;
     justify-content: space-between;
     padding: 10px 100px;
@@ -75,6 +76,10 @@ header {
     color: var(--primary-color);
     border-bottom: 0;
 
+}
+
+#email-icon {
+    font-size: 40px;
 }
 
 #social-medias {
@@ -233,7 +238,7 @@ span {
 
 
 #contact {
-    background-color: var(--secundary-color);
+    background-color: var(--main-gray-color);
     padding: 30px 20px;
     width: 100%;
 
@@ -592,7 +597,7 @@ footer {
 
     .emailContact {
         padding: 0;
-        gap: 5px;
+        gap: 8px;
     }
 
     .emailContact p {

@@ -19,7 +19,7 @@ window.addEventListener("scroll", function () {
       headerTexts[i].style.color = "white";
     }
   } else {
-    header.style.backgroundColor = "#cccccc";
+    header.style.backgroundColor = "#d9dada";
     menuIcon.style.color = "black";
     closeMenu.style.color = "black";
     logoUp.style.display = "flex";

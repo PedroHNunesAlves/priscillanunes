@@ -462,7 +462,7 @@ footer {
 
     #nav.active {
         opacity: 1;
-        background-color: var(--secundary-color);
+        background-color: var(--main-gray-color);
         display: flex;
         flex-direction: column;
         height: 100vh;

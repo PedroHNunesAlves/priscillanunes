@@ -630,6 +630,36 @@ footer {
     width: 350px;
     background-color: rebeccapurple;
   }
+
+  .processUp {
+    text-align: center;
+  }
+
+  .processRight {
+    display: none;
+  }
+
+  .accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .processLeft {
+    display: flex;
+    width: 100%;
+  }
+
+  .processBlock {
+    display: flex;
+    width: 100%;
+  }
+
+  .accordion {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -776,6 +806,14 @@ footer {
     place-self: center;
     width: 100%;
     padding-bottom: 20px;
+  }
+
+  .accordion li {
+    width: auto;
+  }
+
+  .accordion input[type="radio"]:checked + label + .content {
+    max-height: 2000px;
   }
 
   .mobile-serviceImg {
